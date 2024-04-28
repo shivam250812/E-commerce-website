@@ -1,0 +1,80 @@
+/* .descriptionbox{
+    margin: 120px 170px;
+}
+.descriptionbox-navigator{
+    display: flex;
+}
+.descriptionbox-nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+}
+.descriptionbox-nav-box.fade{
+    background: #cebfbf;
+    color: #555;
+}
+.descriptionbox-description{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+} */
+
+/* Base styles */
+.descriptionbox {
+    margin: 120px auto; /* Center the description box horizontally */
+    max-width: 100%; /* Ensure the description box doesn't exceed the width of its container */
+    padding: 0 20px; /* Add padding to the sides for better readability on small screens */
+}
+
+.descriptionbox-navigator {
+    display: flex;
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+}
+
+.descriptionbox-nav-box.fade {
+    background: #cebfbf;
+    color: #555;
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 80px auto; /* Adjust margin for smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100%; /* Make the navigation boxes take full width */
+        margin-bottom: 15px; /* Add some spacing between navigation boxes */
+    }
+
+    .descriptionbox-description {
+        padding: 24px; /* Reduce padding for smaller screens */
+    }
+}
